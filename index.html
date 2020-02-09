@@ -20,7 +20,12 @@
     <script src='lib/gallery.js'></script>
 
     <script>
-      const params = Page.getQueryParameters();
+      window.params = {};
+
+      window.addEventListener('load', () => {
+        window.params = Page.getQueryParameters();
+
+      });
 
       window.addEventListener('load', () => {
         Gallery.randomizeHeaderImage();
