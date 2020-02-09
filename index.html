@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+
+<html lang='en-US'>
+
+  <head>
+   <title>Guitar & Bass - Repairs and Customs</title>
+    <meta http-equiv='Content-Type'
+          content='text/html'
+          charset='UTF-8' />
+
+    <link rel='stylesheet' type='text/css'
+          href='https://fonts.googleapis.com/css?family=Permanent%20Marker' />
+    <link rel='stylesheet' type='text/css'
+          href='style/main.css' />
+
+    <script src='lib/util.js'></script>
+    <script src='lib/ajax.js'></script>
+    <script src='lib/page.js'></script>
+    <script src='lib/site.js'></script>
+    <script src='lib/gallery.js'></script>
+
+    <script>
+      const params = Page.getQueryParameters();
+
+      window.addEventListener('load', () => {
+        Gallery.randomizeHeaderImage();
+
+        window.bannerInterval = window.setInterval(Gallery.randomizeHeaderImage, 12000);
+
+        switch(params.content) {
+          case 'services':
+            document.location.hash = '#page-content';
+
+            Site.showServicesContent();
+            break;
+
+          case 'gallery':
+            document.location.hash = '#page-content';
+
+            Site.showGalleryContent();
+            break;
+
+          //case 'testimonials':
+          //  document.location.hash = '#page-content';
+          //
+          //  Site.showTestimonialsContent();
+          //  break;
+
+          case 'about':
+            document.location.hash = '#page-content';
+
+            Site.showAboutUsContent();
+            break;
+
+          //case 'resources':
+          //  document.location.hash = '#page-content';
+
+          //  Site.showResourcesContent();
+          //  break;
+
+          case 'home':
+            document.location.hash = '#page-content';
+
+            Site.showHomeContent();
+            break;
+
+          case 'pricing':
+            document.location.hash = '#page-content';
+
+            Site.showPricingContent();
+            break;
+
+          case 'contactus':
+
+            Site.showContactusContent();
+            break;
+
+          default:
+            Site.showHomeContent();
+            break;
+        }
+
+      });
+
+    </script>
+
+  </head>
+
+  <body>
+
+    <div id='content'>
+
+      <div id='page-header'>
+
+        <div id='page-header-image'>
+          <img />
+          <div class='page-header-text-overlay'>
+            <a href='index.html'>
+              <p class='title'>Guitar &amp; Bass</p>
+              <p class='subtitle'>Customs and Repairs</p>
+            </a>
+          </div>
+        </div>
+
+        <div id='page-header-menu'>
+
+          <div id='home-header-button' class='header-item' onclick='Page.setQueryParameter("content", "home");'>
+            <p>Home</p>
+          </div>
+
+          <div id='services-header-button' class='header-item' onclick='Page.setQueryParameter("content", "services");'>
+            <p>Services</p>
+          </div>
+
+          <div id='gallery-header-button' class='header-item' onclick='Page.setQueryParameter("content", "gallery");'>
+            <p>Gallery</p>
+          </div>
+<!--
+          <div id='testimonials-header-button' class='header-item' onclick='Page.setQueryParameter("content", "testimonials");'>
+            <p>Testimonials</p>
+          </div>
+-->
+          <div id='aboutus-header-button' class='header-item' onclick='Page.setQueryParameter("content", "about");'>
+            <p>About Us</p>
+          </div>
+<!--
+          <div id='resources-header-button' class='header-item' onclick='Page.setQueryParameter("content", "resources");'>
+            <p>Resources</p>
+          </div>
+-->
+          <div id='pricing-header-button' class='header-item' onclick='Page.setQueryParameter("content", "pricing");'>
+            <p>Pricing</p>
+          </div>
+
+          <div id='contactus-header-button' class='header-item' onclick='Page.setQueryParameter("content", "contactus");'>
+            <p>Contact Us</p>
+          </div>
+
+
+        </div>
+
+      </div>
+
+      <div id='page-content'>
+
+        <div id='page-content-home' class='inactive'>
+
+         <div class='page-title'>No <i>Guitar Snobs</i> Here!</div>
+
+
+          <div class='section'>
+            <div class='entry'><i>Les Paul</i> or <i>Strat</i> lacking <u>CRUNCH</u>?</div>
+            <div class='entry'><i>Jackson</i> or <i>Ibanez</i> lacking <u>WARMTH</u>?</div>
+            <div class='entry'>Super-Strat not doing very much <i>shredding</i>?</div>
+            <div class='entry'>Vintage reissue not sounding or playing quite right?</div>
+            <div class='entry'>Dull or flat acoustic guitar tone?</div>
+            <div class='entry'>Bass guitar lacking some pop or rumble?</div>
+            <div class='entry'>Got an old treasure that needs some <u>proper</u> TLC?</div>
+            <div class='entry'>Old axe that plays <i>great</i> but sounds weak?</div>
+            <div class='entry'><i>Great</i> sounding axe tough to play?</div>
+            <div class='entry'>Stuck playing a four-string bass with a seven-string guitarist?</div>
+            <div class='entry'>Interested in tuning your six-string really low?</div>
+
+          </div>
+
+          <div id='home-details' class='section'>
+
+            <div class='copytext'>
+              We specialize in targeted customizations and repairs for guitars and basses of all price points. We're not here to belittle your instrument and we're certainly not here to sell you one of ours.
+              <br/><br/>
+              We'll consult with you and help you customize your instrument to make it work specifically for <u>YOU</u>! Believe it or not, the quality, sound, and playability of your instrument and it's build has very little to do with what you paid for it.
+              <br/><br/>
+              In fact, the quality, sound, and playability of your instrument is more often affected by it's cost-to-build in the factory, allowing manufacturers to increase profit margins while convincing you that you're purchaing a better, higher quality instrument.
+              <br/><br/>
+              Contact us so that we can chat about your instrument, your technique, your musical style, and what it is you want to do with your instrument or how it is that you want your instrument to perform better.
+            </div>
+
+
+          </div>
+
+        </div>
+
+        <div id='page-content-services' class='inactive'>
+
+          <div class='page-title'>Services</div>
+
+          <div class='section'>
+            <div class='entry'>
+              <div class='copytext'>
+                Our customizations are not for collectors, but rather for musicians. If your's is a collector's item of any kind, then you'd be better off leaving the instrument unmodified so that it may retain any monetary value that may be attributed to it.
+              </div>
+              <div class='title'>Cleaning</div>
+              <div class='copytext'>
+                A thorough cleaning of your instrument including a scrubbing of the fretboard, polishing of frets, tuners, bridges, and other hardware as well as a light polish and wax of the instrument's finished surfaces. We can even rebuild, polish, and regrease tuning machines and bridge components.
+                <br/><br/>
+                The cleaning service also includes a light oil treatment for unfinished necks, enhancing mobility or grip, per your preference, while keeping the fretboard from drying out. This also has the added benefit of significantly extending the life of the instrument's strings.
+              </div>
+            </div>
+
+          </div>
+
+          <div class='section'>
+            <div class='entry'>
+              <div class='title'>Basic setups</div>
+              <div class='copytext'>
+                includes a bridge adjustment and intonation for simple bridge mechanisms such as hardtail and <i>Tune-O-Matic</i> bridges as well as the one-way tremolos found on <i>Strats</i>.
+                <br/><br/>
+                This service <u>does not apply</u> to advanced tremolos such as <i>Floyd Rose</i> floating bridges as well as <i>AccuTune</i> and <i>Kahler</i> tremolos and other similar tremolos. These will require an Advanced Setup service.
+              </div>
+            </div>
+
+          </div>
+
+          <div class='section'>
+            <div class='entry'>
+              <div class='title'>Advanced setups</div>
+              <div class='copytext'>
+              includes the same services performed with a <i>Basic Setup</i> but includes an adjustment to the neck's relief as well as the nut below the headstock to allow for a more precise <i>professional</i> setup across the length of the fretboard.
+              <br/><br/>
+              We can even reconfigure a four-string bass or six-string guitar to play like a five-string bass or seven-string guitar simply by omitting the string sets' first string and setting up the instrument accordingly.
+              </div>
+            </div>
+          </div>
+
+          <div class='section'>
+            <div class='entry'>
+              <div class='title'>Electronics</div>
+              <div class='copytext'>
+              Made-to-order electronics upgrades and reconfigurations including series/parallel modifications, coil taps and alternate pickup groupings (including series-wired single coil combos), phase inversions, advanced shielding and grounding, potting, waxing, etc.
+              <br/><br/>
+              We have a particular specialty in electronics. Let's chat and discuss the great many unique options available to customize your instrument for your musical style, physical technique, and amplifier configuration.
+              </div>
+            </div>
+          </div>
+
+          <div class='section'>
+            <div class='entry'>
+              <div class='title'>Necks</div>
+              <div class='copytext'>
+                We can reshape your neck's profile, turning a <i>baseball bat</i> "U" shape, made for large hands, into a "V" shape for those <i>old-schoolers</i> who play with their thumb over the edge of the fretboard or a modern "C" shape, comfortable for most players and techniques.
+                <br/><br/>
+                We can also do compound neck profiles enhancing access to higher frets where chunky neck joints may otherwise be an obstruction. We can reshape clunky neck joints as well as perform calculated shims on bolt-on necks.
+                <br/><br/>
+                Do you have a "<i>hitchhiker's thumb</i>"; that is a <i>double-jointed thumb</i> that bends backwards at it's interphalangeal joint. We can reshape your neck with an asymmetrical "V" profile that moves the ridge slightly up towards the 5th or 6th strings, giving your thumb plenty of room to lay flat, reducing fatigue.
+              </div>
+            </div>
+          </div>
+
+          <div class='section'>
+            <div class='entry'>
+              <div class='title'>Bridgework</div>
+              <div class='copytext'>
+                We can perform a great number of customizations to guitar and bass bridges. This includes simple replacements, like high-mass bridges and steel, granite, or brass tremolo blocks as well as string-through-body modifications for hardtail bridges.
+                <br/><br/>
+                We can also properly block off <i>floored</i> trems; that is Strat trems tightened to sit flat against the body. This trick has also been known to work for unused floating bridges like some Floyd Rose Bridge models.
+                <br/><br/>
+                We can also shave down the wood base underneath your flat guitar or bass bridge, allowing for better control of string height where many stock bridges and saddles are simply too tall for their instrument.
+
+
+              </div>
+            </div>
+          </div>
+
+
+          <div class='section'>
+            <div class='entry'>
+              <div class='title'>Fretboards</div>
+              <div class='copytext'>
+              Besides cleaning and treating for better mobility or for better grip, per your preference. We can also perform custom and compound fretboard radius adjustments, refrets, and even partial or full fretboard scallops going as far up or down the neck as you wish.
+              </div>
+            </div>
+
+          </div>
+
+          <div class='section'>
+            <div class='entry'>
+              <div class='title'>Acoustic and Classical Guitars</div>
+              <div class='copytext'>
+                Besides the standard services offered for all guitars. We also offer services specific to acoustic instruments.
+                <br/><br/>
+                We can perform repairs, adjustments, and replacements of acoustic and classical guitar and bass saddles and bridges.
+                <br/><br/>
+              We can also repair the guitar's soundboard, rebinding it as well as shaving down excessively thick soundboards and finishes that can cause your instrument to sound dull and flat.
+                <br/><br/>
+                Our expertise with electronics is not limited to electric instruments. We can install piezoelectric pickups or contact microphones in your bridge, saddle, or anywhere on your soundboard.
+                <br/><br/>
+                We can also retrofit preamp units, allowing for built-in equalizers or tuners. We can install a line-level balanced output, suitable for PA systems without the use of a direct box, or unbalanced outputs, allowing you to plug your guitar directly into any guitar amp's high impedence input.
+              </div>
+            </div>
+          </div>
+
+          <div class='section'>
+            <div class='entry'>
+              <div class='title'>Aftermarket Parts</div>
+              <div class='copytext'>
+                Our services, wherever possible, can optionally be performed using cost-effective aftermarket parts. This allows for low-budget builds and customizations.
+                <br/><br/>
+                We have a keen understanding of how quality may be potentially diminished by low-cost manufacturers. We specially select aftermarket hardware with our customers in mind, allowing for an acceptable level of quality where it actually matters and avoiding unnecessary <i>vanity features</i>.
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div id='page-content-gallery' class='inactive'>
+          <div class='page-title'>Gallery</div>
+            <div class='section'>
+
+              <div class='copytext'>
+                COMING SOON!
+                <br/><br/>
+                This page is currently under construction. Please check back again soon for updates.
+              </div>
+            </div>
+          <!--<div class='section'>
+            <div class='copytext'>
+              This gallery shows off instruments that we've worked on as well as instruments from our own personal collections. We are transparent about the actual modifications performed and their long-term success or failure. We also try to be candid about any factory or design shortcomings found while working on each instrument.
+            </div>
+
+          </div>-->
+
+          <!--<div class='section'>
+            <div id='gallery-0000' class='entry'>
+
+              <div class='title'>
+                Mass-Produced Mediocrity
+              </div>
+
+              <div class='copytext'>
+
+                This guitar jams bro!!! I got it for just $7 per month for 48 months!
+                <br/><br/>
+                It's got more strings than I know how to play. I barely even know how to tune it.
+                <br/>
+                Luckily I only play the last two of them.
+              </div>
+
+              <div class='slideshow-control'>
+
+                <div class='button left inactive' onclick='Gallery.showPrevFrame(this.parentElement.parentElement.getElementsByClassName("pic")[0]);'>
+
+                </div>
+              </div>
+
+              <div class='pic'>
+                <img src='img/slideshows/gallery/mass-produced-mediocrity/0000.jpg' title='see this wine red finish...it&apos;s totally rare bro! ' />
+                <img src='img/slideshows/gallery/mass-produced-mediocrity/0001.jpg' class='inactive' title='now it&apos;s like in my dreams bro!' />
+                <img src='img/slideshows/gallery/mass-produced-mediocrity/0002.jpg' class='inactive' title='woah bro!! now it&apos;s totally GREEN!' />
+              </div>
+
+              <div class='slideshow-control'>
+
+                <div class='button right active' onclick='Gallery.showNextFrame(this.parentElement.parentElement.getElementsByClassName("pic")[0]);'>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>-->
+
+        </div>
+<!--
+        <div id='page-content-testimonials' class='inactive'>
+          <div class='page-title'>Testimonials</div>
+
+          <div class='section'>
+            <div class='copytext'>
+              These testimonials come from our own customers and friends, every one of which have had instruments built or modified by us.
+              <br/><br/>
+              Wherever possible, we ask that our testimonials be submitted with candor. We're interested in learning from our mistakes and successes and prefer that our customers tell us where and when we <i>miss-the-mark</i> rather than shower us with praises. While we like the ego boost, we learn more from our failures than from our successes.
+            </div>
+
+          </div>
+
+        </div>
+-->
+
+        <div id='page-content-aboutus' class='inactive'>
+
+          <div class='page-title'>About Us</div>
+
+          <div class='section'>
+
+            <div class='entry'>
+              <div id='aboutus-intro' class='copytext'>
+                We are a group of active musicians who know our instruments and tools very well. We've all been around long enough to remember unhelpful local repair shops run by ornery old men with inflated egos (Anyone remember <i>Snukst Music</i> on South Pulaski Road, in Chicago?).
+                <br/><br/>
+                This service was founded because we've all argued with shop owners, knowing that the work to be performed would not be taken seriously simply because a shop owner had very specific opinions about instruments not made in the USA or otherwise of a particular vintage.
+                <br/><br/>
+                Many brands, over the years, have cut quality while raising prices (anyone remember those original Made-In-Mexico Strats? How about when a Gibson USA Explorer or a Fender USA Jaguar cost $400). No guitar sold today will ever be a collector's item or a <i>nest egg</i>, simply because they're not built to be so. We're here to service real musicians' instruments, not some collector's eye candy. We <i>want</i> you to keep that old instrument, custominzing it to fit your evolving technique and style without <i>breaking the bank</i> on expensive customizations or a brand new instrument of dubious quality.
+                <br/><br/>
+
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class='section'>
+            <div class='logo'>
+              <img src='img/bios/salvador-ortiz.png'/>
+            </div>
+            <div class='entry'>
+              <div class='title'>Salvador Ortiz</div>
+              <div class='subtitle'>Guitar and Bass Technician</div>
+              <div class='copytext'>
+                Sal Ortiz has been playing music in Chicago for over 25 years. He also taught guitar and audio production for over 10 years on the South Side of Chicago.
+                <br/><br/>
+                Sal set out to maintain his own equipment after dealing with enough arrogant and lazy shop owners. Sal actively absorbed knowledge from a vast array of available literature and a burgeoning <i>World Wide Web</i>. All the while, honing his craft on garbage picked and garage sale instruments as well as his own personal collection, which has rapidly grown to feature some pretty unique builds and customs.
+                <br/><br/>
+                Sal also consults on a wide array of technical matters from broadcast technology to audio production as well as provides pro bono services repairing and maintaing a wide array of instruments for local nonprofit organizations.
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+<!--
+        <div id='page-content-resources' class='inactive'>
+          <div class='page-title'>Resources</div>
+          <div id='resources-details' class='section'>
+            <div class='copytext'>
+              Included in this page is some reading material that we've found interesting or that we find provides an understanding of what it is that we actually do. Many of these tips and tricks sound fairly unorthodox, as do many of our own services, but know that we'd be more than glad to discuss in detail the contents of these articles as well as the services that we perform.
+
+            </div>
+          </div>
+
+
+          <div class='section'>
+            <div class='title'>
+              Necks and Fretboards
+            </div>
+            <div class='entry'>
+              <div class='copytext'>
+                Owens, Jeff (Fender Musical Instruments), <a href='https://www.fender.com/articles/tech-talk/c-u-v-which-neck-shape-is-for-you' target='_blank'><i>C-V-U? Which Neck Shape Is for You?</i></a>
+                <br/>
+                <sup>&nbsp;&nbsp;retrieved from <a href='https://www.fender.com/articles/tech-talk/c-u-v-which-neck-shape-is-for-you' target='_blank'>https://www.fender.com/articles/tech-talk/c-u-v-which-neck-shape-is-for-you</a></sup>
+              </div>
+
+              <div class='logo fender-logo'>
+                <a href='https://www.fender.com/' target='_blank'>
+                  <img src='img/logos/fender-black-transparent-bg.png' />
+                </a>
+              </div>
+
+            </div>
+
+
+            <div class='entry'>
+              <div class='copytext'>
+                Carr, Don (Sweetwater, June 14, 2018), <a href='https://www.sweetwater.com/insync/what-is-fingerboard-radius' target='_blank'><i>What Is Fingerboard Radius?</i></a>
+                <br/>
+                <sup>&nbsp;&nbsp;retrieved from <a href='https://www.sweetwater.com/insync/what-is-fingerboard-radius/' target='_blank'>https://www.sweetwater.com/insync/what-is-fingerboard-radius</a></sup>
+              </div>
+
+              <div class='logo sweetwater-logo'>
+                <a href='https://www.sweetwater.com/insync/' target='_blank'>
+                  <img src='img/logos/sweetwater-transparent-bg.png' />
+                </a>
+              </div>
+
+            </div>
+
+            <div class='entry'>
+              <div class='copytext'>
+                Owens, Jeff (Fender Musical Instruments), <a href='https://www.fender.com/articles/tech-talk/what-is-fingerboard-radius' target='_blank'><i>What Is Fingerboard Radius?</i></a>
+                <br/>
+                <sup>&nbsp;&nbsp;retrieved from <a href='https://www.fender.com/articles/tech-talk/what-is-fingerboard-radius' target='_blank'>https://www.fender.com/articles/tech-talk/what-is-fingerboard-radius</a></sup>
+              </div>
+              <div class='logo fender-logo'>
+                <a href='https://www.fender.com/' target='_blank'>
+                  <img src='img/logos/fender-black-transparent-bg.png' />
+                </a>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class='section'>
+            <div class='title'>
+              Electronics
+            </div>
+
+            <div class='entry'>
+              <div class='copytext'>
+                Orpheo (Seymour Duncan, October 4, 2013), <a href='https://www.seymourduncan.com/blog/tips-and-tricks/lespaulwiring' target='_blank'><i>50's Vs. Modern Les Paul Wiring</i></a>
+                <br/>
+                <sup>&nbsp;&nbsp;retrieved from <a href='https://www.seymourduncan.com/blog/tips-and-tricks/lespaulwiring' target='_blank'>https://www.seymourduncan.com/blog/tips-and-tricks/lespaulwiring</a></sup>
+              </div>
+
+              <div class='logo seymourduncan-logo'>
+                <img src='img/logos/seymourduncan-white-transparent-bg.png' />
+              </div>
+
+            </div>
+
+            <div class='entry'>
+              <div class='copytext'>
+                WiredGuitarist (Wired Guitarist, July 5, 2016), <a href='http://www.wiredguitarist.com/2016/07/05/alnico-vs-ceramic-pickup-magnets/' target='_blank'><i>Alnico vs. Ceramic Pickup Magnets</i></a>
+                <br/>
+                <sup>&nbsp;&nbsp;retrieved from <a href='http://www.wiredguitarist.com/2016/07/05/alnico-vs-ceramic-pickup-magnets' target='_blank'>http://www.wiredguitarist.com/2016/07/05/alnico-vs-ceramic-pickup-magnets</a></sup>
+              </div>
+
+              <div class='logo wiredguitarist-logo'>
+                <img src='img/logos/wiredguitarist-logo.png' />
+              </div>
+
+            </div>
+
+            <div class='entry'>
+              <div class='copytext'>
+                WiredGuitarist (Wired Guitarist, February 25, 2016), <a href='http://www.wiredguitarist.com/2016/02/25/active-vs-passive-pickups-an-introduction/' target='_blank'><i>Active vs. Passive Pickups</i></a>
+                <br/>
+                <sup>&nbsp;&nbsp;retrieved from <a href='http://www.wiredguitarist.com/2016/02/25/active-vs-passive-pickups-an-introduction/' target='_blank'>http://www.wiredguitarist.com/2016/02/25/active-vs-passive-pickups-an-introduction/</a></sup>
+              </div>
+
+              <div class='logo wiredguitarist-logo'>
+                <img src='img/logos/wiredguitarist-logo.png' />
+              </div>
+
+            </div>
+
+            <div class='entry'>
+              <div class='copytext'>
+                WiredGuitarist (Wired Guitarist, April 21, 2016), <a href='http://www.wiredguitarist.com/2016/04/21/splitting-vs-tapping-pickups/' target='_blank'><i>Splitting vs. Tapping Pickups</i></a>
+                <br/>
+                <sup>&nbsp;&nbsp;retrieved from <a href='http://www.wiredguitarist.com/2016/04/21/splitting-vs-tapping-pickups/' target='_blank'>http://www.wiredguitarist.com/2016/04/21/splitting-vs-tapping-pickups/</a></sup>
+              </div>
+
+              <div class='logo wiredguitarist-logo'>
+                <img src='img/logos/wiredguitarist-logo.png' />
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class='section'>
+
+            <div class='title'>
+              Physical Health
+            </div>
+            <div class='entry'>
+              <div class='copytext'>
+                (American Society for Surgery of the Hand), <a href='https://www.assh.org/handcare/Anatomy/Joints' target='_blank'><i>Joints</i></a>
+                <br/>
+                <sup>&nbsp;&nbsp;retrieved from <a href='https://www.assh.org/handcare/Anatomy/Joints' target='_blank'>https://www.assh.org/handcare/Anatomy/Joints</a></sup>
+              </div>
+
+              <div class='logo assh-logo'>
+                <img src='img/logos/assh-transparent-bg.png' />
+              </div>
+
+            </div>
+
+            <div class='entry'>
+              <div class='copytext'>
+                Fasano, Martina (Guitar Player, April 15, 2019), <a href='https://www.guitarplayer.com/technique/stop-trashing-your-hands' target='_blank'><i>Stop Trashing Your Hands!</i></a>
+                <br/>
+                <sup>&nbsp;&nbsp;retrieved from <a href='https://www.guitarplayer.com/technique/stop-trashing-your-hands' target='_blank'>https://www.guitarplayer.com/technique/stop-trashing-your-hands</a></sup>
+              </div>
+              <div class='logo guitarplayer-logo'>
+                <img src='img/logos/guitarplayer-transparent-bg.png' />
+              </div>
+
+            </div>
+
+
+            <div class='entry'>
+              <div class='copytext'>
+                Dr. Jameson, Timothy (Musician's Health, 2018), <a href='https://www.musicianshealth.com/carpel-tunnel-syndrome-in-guitarists' target='_blank'><i>Carpal Tunnel Syndrome In Guitarists</i></a><br/>
+                <sup>&nbsp;&nbsp;retrieved from <a href='https://www.musicianshealth.com/carpel-tunnel-syndrome-in-guitarists' target='_blank'>https://www.musicianshealth.com/carpel-tunnel-syndrome-in-guitarists</a></sup>
+              </div>
+              <div class='logo musicianshealth-logo'>
+                <img src='img/logos/musicianshealth-transparent-bg.png' />
+              </div>
+            </div>
+
+          </div>
+
+          <div class='section'>
+
+            <div class='title'>
+              Bridgework
+            </div>
+
+            <div class='entry'>
+              <div class='copytext'>
+                add some content.
+              </div>
+
+
+            </div>
+
+          </div>
+
+          <div class='section'>
+
+            <div class='title'>
+              Acoustics
+            </div>
+
+            <div class='entry'>
+              <div class='copytext'>
+                Somogyi, Ervin (2013), <a href='http://esomogyi.com/articles/specific-top-thickness-in-the-guitar' target='_blank'><i>Specific Top Thickness in the Guitar</i></a>
+                <br/>
+                <sup>&nbsp;&nbsp;retrieved from <a href='http://esomogyi.com/articles/specific-top-thickness-in-the-guitar/' target='_blank'>http://esomogyi.com/articles/specific-top-thickness-in-the-guitar</a></sup>
+              </div>
+              <div class='logo ervinsomogyi-logo'>
+                <img src='img/logos/ervinsomogyi-white-bg.png' />
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class='section'>
+
+            <div class='title'>
+              Serial Numbers / Dating
+            </div>
+
+            <div class='entry'>
+              <div class='copytext'>
+                Orkin, Dan (Reverb.com), <a href='https://reverb.com/news/how-to-date-a-fender' target='_blank'><i>How to Date a Fender with Serial Numbers?</i></a>
+                <br/>
+                <sup>&nbsp;&nbsp;retrieved from <a href='https://reverb.com/news/how-to-date-a-fender' target='_blank'>https://reverb.com/news/how-to-date-a-fender</a></sup>
+              </div>
+              <div class='logo reverb-logo'>
+                <a href='https://reverb.com/' target='_blank'>
+                  <img src='img/logos/reverb-grey-transparent-bg.png' />
+                </a>
+              </div>
+
+            </div>
+
+            <div class='entry'>
+              <div class='copytext'>
+                (Guitar Insite), <a href='https://www.guitarinsite.nl/SERIENUMMERS-fgm_eng.php' target='_blank'><i>Dating Guitars By Reference of Serial Numbers</i></a>
+                <br/>
+                <sup>&nbsp;&nbsp;retrieved from <a href='https://www.guitarinsite.nl/SERIENUMMERS-fgm_eng.php' target='_blank'>https://www.guitarinsite.nl/SERIENUMMERS-fgm_eng.php</a></sup>
+              </div>
+              <div class='logo guitarinsite-logo'>
+                <a href='https://www.guitarinsite.nl/index_eng.php' target='_blank'>
+                  <img src='img/logos/guitarinsite-white-bg.png' />
+                </a>
+              </div>
+
+            </div>
+
+            <div class='entry'>
+              <div class='copytext'>
+                (Guitar Dater Project), <a href='https://www.guitardaterproject.org/default.aspx' target='_blank'><i>The Guitar Dater Project</i></a>
+                <br/>
+                <sup>&nbsp;&nbsp;retrieved from <a href='https://www.guitardaterproject.org/default.aspx' target='_blank'>https://www.guitardaterproject.org/default.aspx</a></sup>
+              </div>
+              <div class='logo guitardaterproject-logo'>
+                <a href='https://www.guitardaterproject.org/default.aspx' target='_blank'>
+                  <img src='img/logos/guitardaterproject-transparent-bg.png' />
+                </a>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class='section'>
+
+            <div class='title'>
+              Aftermarket Parts
+            </div>
+
+            <div class='entry'>
+              <div class='copytext'>
+                 (Guitar Fetish), <a href='https://www.guitarfetish.com' target='_blank'><i>Guitar Fetish Dirt-Cheap Aftermarket Parts Vendor</i></a>
+                <br/>
+                <sup>&nbsp;&nbsp;retrieved from <a href='https://www.guitarfetish.com' target='_blank'>https://www.guitarfetish.com</a></sup>
+              </div>
+              <div class='logo guitarfetish-logo'>
+                <a href='https://www.guitardaterproject.org/default.aspx' target='_blank'>
+                  <img src='img/logos/guitarfetish.gif' />
+                </a>
+              </div>
+
+
+            </div>
+
+            <div class='entry'>
+              <div class='copytext'>
+                 (Callaham Guitars), <a href='https://www.callahamguitars.com' target='_blank'><i>Callaham Guitars and High-Quality Aftermarket Parts Vendor</i></a>
+                <br/>
+                <sup>&nbsp;&nbsp;retrieved from <a href='https://www.callahamguitars.com' target='_blank'>https://www.callahamguitars.com</a></sup>
+              </div>
+              <div class='logo callahamguitars-logo'>
+                <a href='https://www.callahamguitars.com' target='_blank'>
+                  <img src='img/logos/callaham-guitars.jpg' />
+                </a>
+              </div>
+
+            </div>
+
+            <div class='entry'>
+              <div class='copytext'>
+                 (Mojo Tone), <a href='https://www.mojotone.com' target='_blank'><i>Mojo Tone Discount Aftermarket Parts Vendor</i></a>
+                <br/>
+                <sup>&nbsp;&nbsp;retrieved from <a href='https://www.mojotone.com' target='_blank'>https://www.mojotone.com</a></sup>
+              </div>
+              <div class='logo mojotone-logo'>
+                <a href='https://www.mojotone.com' target='_blank'>
+                  <img src='img/logos/mojotone-logo.png' />
+                </a>
+              </div>
+
+            </div>
+
+
+
+          </div>
+
+        </div>
+-->
+
+
+        <div id='page-content-pricing' class='inactive'>
+          <div class='page-title'>Pricing</div>
+
+          <div class='section'>
+            <div class='title'>Repairs and Consultations</div>
+            <div class='copytext'>
+              This page is intended to present our pricing policies.
+              <br/><br/>
+              From here, we can allow for the submission of requests for quotes and estimates, advice, and even discussions regarding bulk and retainer work.
+              <br/><br/>
+
+
+            </div>
+
+          </div>
+
+          <div class='section'>
+            <div class='title'>Customizations and Modifications</div>
+            <div class='copytext'>
+              This page is intended to present our pricing policies.
+              <br/><br/>
+              From here, we can allow for the submission of requests for quotes and estimates, advice, and even discussions regarding bulk and retainer work.
+              <br/><br/>
+
+
+            </div>
+
+          </div>
+
+          <div class='section'>
+            <div class='title'>Retainer and Bulk Work.</div>
+            <div class='copytext'>
+              This page is intended to present our pricing policies.
+              <br/><br/>
+              From here, we can allow for the submission of requests for quotes and estimates, advice, and even discussions regarding bulk and retainer work.
+              <br/><br/>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div id='page-content-contactus' class='inactive'>
+
+          <div class='page-title'>Contact Us</div>
+          <div class='section'>
+            <div class='title'>Let's talk!</div>
+            <div class='copytext'>
+              Send us a message regarding any work or consultation that you might be interested in having us perform. We can discuss any issues or interests as well as pricing and timelines.
+              <br/><br/>
+              Be as descriptive as possible, including pictures displaying any damage to be repaired or specific descriptions of the equipment and any issues that it may have.
+              <br/><br/>
+              So that we may better help, also include any details regarding the istrument's brand, model, serial number, manufacture date, etc.
+
+            </div>
+          </div>
+
+          <div class='section'>
+            <div class='qr-code'>
+              <a href='mailto:technician@eatsbabies.com?subject=Technical%20Services' target='_blank'>
+                <img src='img/mailto-technician-at-eatsbabies-qr-code.png'></img>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div id='page-footer'>
+
+        <div class='footer-item'>
+          <p><a href='mailto:technician@eatsbabies.com?subject=Technical%20Services' target='_blank'>Email us</a></p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </body>
+
+
+</html>
