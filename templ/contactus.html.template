@@ -1,0 +1,20 @@
+<div class='page-title'>Contact Us</div>
+<div class='section'>
+  <div class='title'>Let's talk!</div>
+  <div class='copytext'>
+    Send us a message regarding any work or consultation that you might be interested in having us perform. We can discuss any issues or interests as well as pricing and timelines.
+    <br/><br/>
+    Be as descriptive as possible, including pictures displaying any damage to be repaired or specific descriptions of the equipment and any issues that it may have.
+    <br/><br/>
+    So that we may better help, also include any details regarding the istrument's brand, model, serial number, manufacture date, etc.
+
+  </div>
+</div>
+
+<div class='section'>
+  <div class='qr-code'>
+    <a href='mailto:technician@eatsbabies.com?subject=Technical%20Services' target='_blank'>
+      <img src='http://cdn.eatsbabies.com/img/mailto-technician-at-eatsbabies-qr-code.png'></img>
+    </a>
+  </div>
+</div>

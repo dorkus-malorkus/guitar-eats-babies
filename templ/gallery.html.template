@@ -1,0 +1,57 @@
+<div class='page-title'>Gallery</div>
+  <div class='section'>
+
+    <div class='copytext'>
+      COMING SOON!
+      <br/><br/>
+      This page is currently under construction. Please check back again soon for updates.
+    </div>
+  </div>
+<!--<div class='section'>
+  <div class='copytext'>
+    This gallery shows off instruments that we've worked on as well as instruments from our own personal collections. We are transparent about the actual modifications performed and their long-term success or failure. We also try to be candid about any factory or design shortcomings found while working on each instrument.
+  </div>
+
+</div>-->
+
+<!--<div class='section'>
+  <div id='gallery-0000' class='entry'>
+
+    <div class='title'>
+      Mass-Produced Mediocrity
+    </div>
+
+    <div class='copytext'>
+
+      This guitar jams bro!!! I got it for just $7 per month for 48 months!
+      <br/><br/>
+      It's got more strings than I know how to play. I barely even know how to tune it.
+      <br/>
+      Luckily I only play the last two of them.
+    </div>
+
+    <div class='slideshow-control'>
+
+      <div class='button left inactive' onclick='Gallery.showPrevFrame(this.parentElement.parentElement.getElementsByClassName("pic")[0]);'>
+
+      </div>
+    </div>
+
+    <div class='pic'>
+      <img src='http://cdn.eatsbabies.com/img/slideshows/gallery/mass-produced-mediocrity/0000.jpg' title='see this wine red finish...it&apos;s totally rare bro! ' />
+      <img src='http://cdn.eatsbabies.com/img/slideshows/gallery/mass-produced-mediocrity/0001.jpg' class='inactive' title='now it&apos;s like in my dreams bro!' />
+      <img src='http://cdn.eatsbabies.com/img/slideshows/gallery/mass-produced-mediocrity/0002.jpg' class='inactive' title='woah bro!! now it&apos;s totally GREEN!' />
+    </div>
+
+    <div class='slideshow-control'>
+
+
+      <div class='button right active' onclick='Gallery.showNextFrame(this.parentElement.parentElement.getElementsByClassName("pic")[0]);'>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>-->
