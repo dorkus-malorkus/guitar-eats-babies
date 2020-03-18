@@ -11,7 +11,7 @@
     <link rel='stylesheet' type='text/css'
           href='https://fonts.googleapis.com/css?family=Permanent%20Marker' />
     <link rel='stylesheet' type='text/css'
-          href='http://cdn.eatsbabies.com/style/main.css' />
+          href='style/main.css' />
 
     <script src='https://github.com/slackjockey/simple-web-templates/releases/download/alpha-20200302/web_template.min.js'></script>
 
@@ -23,147 +23,62 @@
     <script src='lib/loader.js'></script>
 
     <script>
-      window.params = {};
+      window.headerImgPromises = Content.HeaderImages.map(Image.preload);
+      window.headerImgTimeout;
 
-      window.addEventListener('DOMContentLoaded', () => {
-        window.params = Page.getQueryParameters();
+      window.templates = Loader.TemplateObjects;
+      window.promises = Loader.loadTemplates();
+    </script>
 
-        window.templates = {
-          header: new WebTemplate(),
-          footer: new WebTemplate(),
-          aboutus: new WebTemplate(),
-          contactus: new WebTemplate(),
-          gallery: new WebTemplate(),
-          home: new WebTemplate(),
-          pricing: new WebTemplate(),
-          services: new WebTemplate(),
-          testimonials: new WebTemplate(),
-        };
-
-      });
-
+    <script>
       window.addEventListener('load', () => {
-        let templates = window.templates;
-
-        let headerEl = document.getElementById('page-header');
+        let headerMenuEl = document.getElementById('page-header-menu');
+        let headerImageEl = document.getElementById('page-header-image');
         let footerEl = document.getElementById('page-footer');
-        let contactusEl = document.getElementById('page-content-contactus');
-        let galleryEl = document.getElementById('page-content-gallery');
-        let aboutusEl = document.getElementById('page-content-aboutus');
-        let homeEl = document.getElementById('page-content-home');
-        let pricingEl = document.getElementById('page-content-pricing');
-        let servicesEl = document.getElementById('page-content-services');
-        let testimonialsEl = document.getElementById('page-content-testimonials');
 
+        window.staticComponentsPromise = Promise.all([
 
-        window.promises = [
-          templates.header.load('http://cdn.eatsbabies.com/templ/page-header.html.template')
-            .then(templates.header.render.bind(templates.header, headerEl)),
+          promises.menu
+            .then(templates.menu.render.bind(templates.menu, headerMenuEl)),
 
-          templates.footer.load('http://cdn.eatsbabies.com/templ/page-footer.html.template')
+          promises.header
+            .then(templates.header.render.bind(templates.header, headerImageEl)),
+
+          promises.footer
             .then(templates.footer.render.bind(templates.footer, footerEl)),
 
-          templates.aboutus.load('http://cdn.eatsbabies.com/templ/aboutus.html.template')
-            .then(templates.aboutus.render.bind(templates.aboutus, aboutusEl)),
-
-          templates.contactus.load('http://cdn.eatsbabies.com/templ/contactus.html.template')
-            .then(templates.contactus.render.bind(templates.contactus, contactusEl)),
-
-          templates.gallery.load('http://cdn.eatsbabies.com/templ/gallery.html.template')
-            .then(templates.gallery.render.bind(templates.gallery, galleryEl)),
-
-          templates.home.load('http://cdn.eatsbabies.com/templ/home.html.template')
-            .then(templates.home.render.bind(templates.home, homeEl)),
-
-          templates.pricing.load('http://cdn.eatsbabies.com/templ/pricing.html.template')
-            .then(templates.pricing.render.bind(templates.pricing, pricingEl)),
-
-          templates.services.load('http://cdn.eatsbabies.com/templ/services.html.template')
-            .then(templates.services.render.bind(templates.services, servicesEl)),
-
-          templates.testimonials.load('http://cdn.eatsbabies.com/templ/testimonials.html.template')
-            .then(templates.testimonials.render.bind(templates.testimonials, testimonialsEl)),
-
-        ];
+        ]);
 
       });
-
 
       window.addEventListener('load', () => {
-        let prommise;
+        let pageId = Cookie.get('page');
 
-        switch(params.content) {
-          case 'services':
-            document.location.hash = '#page-content';
-
-            promise = Promise.all(window.promises)
-              .then(Site.showServicesContent)
-            break;
-
-          case 'gallery':
-            document.location.hash = '#page-content';
-
-            promise = Promise.all(window.promises)
-              .then(Site.showGalleryContent);
-            break;
-
-          case 'testimonials':
-            document.location.hash = '#page-content';
-
-            promise = Promise.all(window.promises)
-              .then(Site.showTestimonialsContent);
-            break;
-
-          case 'about':
-            document.location.hash = '#page-content';
-
-            promise = Promise.all(window.promises)
-              .then(Site.showAboutUsContent);
-            break;
-
-          case 'resources':
-            document.location.hash = '#page-content';
-
-            promise = Promise.all(window.promises)
-              .then(Site.showResourcesContent);
-            break;
-
-          case 'home':
-            document.location.hash = '#page-content';
-
-            promise = Promise.all(window.promises)
-              .then(Site.showHomeContent);
-            break;
-
-          case 'pricing':
-            document.location.hash = '#page-content';
-
-            promise = Promise.all(window.promises)
-              .then(Site.showPricingContent);
-            break;
-
-          case 'contactus':
-
-            promise = Promise.all(window.promises)
-              .then(Site.showContactusContent);
-            break;
-
-          default:
-
-            promise = Promise.all(window.promises)
-              .then(Site.showHomeContent);
-            break;
+        if (!pageId) {
+          pageId = 'home';
         }
 
+        window.staticComponentsPromise
+          .then(Page.updateContent.bind(window, pageId))
+          .then(() => {
 
-        promise.then(() => {
-          Gallery.randomizeHeaderImage();
+            Promise.all(window.headerImgPromises)
+              .then((imgEls) => {
 
-          window.bannerInterval = window.setInterval(Gallery.randomizeHeaderImage, 12000);
-        });
+                imgEls.forEach(Image.updateHeader);
+
+                Image.nextHeaderImage();
+              })
+
+
+          });
 
       });
 
+    </script>
+
+    <script>
+      //window.addEventListener('beforeunload', clearCookies());
     </script>
 
   </head>
@@ -173,43 +88,19 @@
     <div id='content'>
 
       <div id='page-header'>
-        <!-- intentionally left blank -->
+
+        <div id='page-header-image' onclick='Image.nextHeaderImage();'>
+          <!-- intentionally left blank -->
+        </div>
+
+        <div id='page-header-menu'>
+          <!-- intentionally left blank -->
+        </div>
+
       </div>
 
       <div id='page-content'>
-
-        <div id='page-content-home' class='inactive'>
-          <!-- intentionally left blank -->
-        </div>
-
-        <div id='page-content-services' class='inactive'>
-          <!-- intentionallly left blank -->
-        </div>
-
-        <div id='page-content-gallery' class='inactive'>
-          <!-- intentionally left blank -->
-        </div>
-
-        <div id='page-content-testimonials' class='inactive'>
-          <!-- intentionally left blank -->
-        </div>
-
-        <div id='page-content-aboutus' class='inactive'>
-          <!-- intentionally left blank -->
-        </div>
-
-        <div id='page-content-resources' class='inactive'>
-          <!-- intentionally left blank -->
-        </div>
-
-        <div id='page-content-pricing' class='inactive'>
-          <!-- intentionally left blank -->
-        </div>
-
-        <div id='page-content-contactus' class='inactive'>
-          <!-- intentionally left blank -->
-        </div>
-
+        <!-- intentionally left blank -->
       </div>
 
       <div id='page-footer'>
