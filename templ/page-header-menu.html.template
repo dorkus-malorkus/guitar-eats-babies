@@ -1,0 +1,32 @@
+<div id='home-header-button' class='header-item' onclick='Page.updateContent("home");'>
+  <p>Home</p>
+</div>
+
+<div id='services-header-button' class='header-item' onclick='Page.updateContent("services");'>
+  <p>Services</p>
+</div>
+
+<div id='gallery-header-button' class='header-item' onclick='Page.updateContent("gallery");'>
+  <p>Gallery</p>
+</div>
+<!--
+<div id='testimonials-header-button' class='header-item' onclick='Page.updateContent("testimonials");'>
+  <p>Testimonials</p>
+</div>
+-->
+<div id='aboutus-header-button' class='header-item' onclick='Page.updateContent("aboutus");'>
+  <p>About Us</p>
+</div>
+<!--
+<div id='resources-header-button' class='header-item' onclick='Page.updateContent("resources");'>
+  <p>Resources</p>
+</div>
+i-->
+<div id='pricing-header-button' class='header-item' onclick='Page.updateContent("pricing");'>
+  <p>Pricing</p>
+</div>
+
+<div id='contactus-header-button' class='header-item' onclick='Page.updateContent("contactus");'>
+  <p>Contact Us</p>
+</div>
+
