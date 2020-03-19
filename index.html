@@ -23,6 +23,11 @@
     <script src='lib/loader.js'></script>
 
     <script>
+      window.CONSTANTS = {
+        headerImageTimeout: 12, // seconds.
+        cookieAge: 3600,        // seconds.
+      };
+
       window.headerImgPromises = Content.HeaderImages.map(Image.preload);
       window.headerImgTimeout;
 
