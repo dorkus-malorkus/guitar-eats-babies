@@ -40,6 +40,7 @@
         let headerMenuEl = document.getElementById('page-header-menu');
         let headerImageEl = document.getElementById('page-header-image');
         let footerEl = document.getElementById('page-footer');
+        let subfooterEl = document.getElementById('page-subfooter');
 
         window.staticComponentsPromise = Promise.all([
 
@@ -51,6 +52,9 @@
 
           promises.footer
             .then(templates.footer.render.bind(templates.footer, footerEl)),
+
+          promises.subfooter
+            .then(templates.subfooter.render.bind(templates.subfooter, subfooterEl)),
 
         ]);
 
@@ -111,6 +115,11 @@
       <div id='page-footer'>
         <!-- intentionally left blank -->
       </div>
+
+      <div id='page-subfooter'>
+        <!-- intentionally left blank -->
+      </div>
+
 
     </div>
 
