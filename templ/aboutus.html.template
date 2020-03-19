@@ -1,29 +1,27 @@
 <div class='page-title'>About Us</div>
 
-<div class='section'>
 
-  <div class='entry'>
-    <div id='aboutus-intro' class='copytext'>
-      We are a group of active musicians who know our instruments and tools very well. We've all been around long enough to remember unhelpful local repair shops run by ornery old men with inflated egos (Anyone remember <i>Snukst Music</i> on South Pulaski Road, in Chicago?).
-      <br/><br/>
-      This service was founded because we've all argued with shop owners, knowing that the work to be performed would not be taken seriously simply because a shop owner had very specific opinions about instruments not made in the USA or otherwise of a particular vintage.
-      <br/><br/>
-      Many brands, over the years, have cut quality while raising prices (anyone remember those original Made-In-Mexico Strats? How about when a Gibson USA Explorer or a Fender USA Jaguar cost $400). No guitar sold today will ever be a collector's item or a <i>nest egg</i>, simply because they're not built to be so. We're here to service real musicians' instruments, not some collector's eye candy. We <i>want</i> you to keep that old instrument, custominzing it to fit your evolving technique and style without <i>breaking the bank</i> on expensive customizations or a brand new instrument of dubious quality.
-      <br/><br/>
-
-    </div>
-  </div>
+<div id='aboutus-intro' class='copytext'>
+  We are a group of active musicians who know our instruments and tools very well. We've all been around long enough to remember unhelpful local repair shops run by ornery old men with inflated egos (Anyone remember <i>Snukst Music</i> on South Pulaski Road, in Chicago?).
+  <br/><br/>
+  This service was founded because we've all argued with shop owners, knowing that the work to be performed would not be taken seriously simply because a shop owner had very specific opinions about instruments not made in the USA or otherwise of a particular vintage.
+  <br/><br/>
+  Many brands, over the years, have cut quality while raising prices (anyone remember those original Made-In-Mexico Strats? How about when a Gibson USA Explorer or a Fender USA Jaguar cost $400). No guitar sold today will ever be a collector's item or a <i>nest egg</i>, simply because they're not built to be so. We're here to service real musicians' instruments, not some collector's eye candy. We <i>want</i> you to keep that old instrument, custominzing it to fit your evolving technique and style without <i>breaking the bank</i> on expensive customizations or a brand new instrument of dubious quality.
 
 </div>
 
 
 <div class='section'>
-  <div class='logo'>
-    <img src='http://cdn.eatsbabies.com/img/bios/salvador-ortiz.png'/>
-  </div>
+
   <div class='entry'>
+
+    <div class='bio-pic'>
+      <img src='http://cdn.eatsbabies.com/img/bios/salvador-ortiz.png'/>
+    </div>
+
     <div class='title'>Salvador Ortiz</div>
-    <div class='subtitle'>Guitar and Bass Technician</div>
+    <div class='subtitle'>Instrument Technician</div>
+
     <div class='copytext'>
       Sal Ortiz has been playing music in Chicago for over 25 years. He also taught guitar and audio production for over 10 years on the South Side of Chicago.
       <br/><br/>
@@ -31,6 +29,7 @@
       <br/><br/>
       Sal also consults on a wide array of technical matters from broadcast technology to audio production as well as provides pro bono services repairing and maintaing a wide array of instruments for local nonprofit organizations.
     </div>
+
   </div>
 
 </div>

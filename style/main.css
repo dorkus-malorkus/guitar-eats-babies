@@ -46,6 +46,9 @@ body a:hover {
   color: var(--header-text-color);
 }
 
+/*#page-header #page-header-image {
+}*/
+
 
 #page-header #page-header-image:hover {
   cursor: pointer;
@@ -85,7 +88,6 @@ body a:hover {
 
   font-size: 36pt;
 }
-
 
 #page-header #page-header-image img {
   width: 100%;
@@ -159,15 +161,27 @@ body a:hover {
 }
 
 #page-content .copytext {
-  font-size: 20pt;
+  font-size: 16pt;
 
-  margin: 48px 24px 24px 48px;
+  margin: 0px 0px 36px 72px;
 }
 
 #page-content .section {
   width: 100%;
   display: inline-block;
 }
+
+#page-header .section .list {
+  display: inline-block;
+  margin-bottom: 1120px;
+}
+
+#page-header .section .list .list-item {
+  display: list-item;
+}
+
+/*#page-content .section .list .list-item .copytext {
+}*/
 
 #page-content .section .title {
   font-size: 36pt;
@@ -181,13 +195,15 @@ body a:hover {
 }
 
 #page-content .section .entry {
-  display: list-item;
-  list-style-type: circle;
+  display: table-row;
+
+  display: inline-block;
 
   font-size: 16pt;
 
-  margin: 10px 10px 10px 120px;
+  margin: 10px 10px 25px 10px;
 }
+
 
 #page-content .section .entry .title {
   font-size: 20pt;
@@ -199,6 +215,17 @@ body a:hover {
   display: table-cell;
   padding: 0px 12px 12px 6px;
 }
+
+
+#page-content .section .entry .bio-pic {
+  display: table-cell;
+  margin: 0px 20px 0px 20px;
+}
+
+#page-content .section .entry .bio-pic img {
+  max-width: 480px;
+}
+
 
 #page-content .section .entry .copytext {
   display: table-cell;
@@ -252,6 +279,41 @@ body a:hover {
 }
 
 #page-footer .footer-item:hover {
+  cursor: pointer;
+  background-color: var(--header-background-color-lighter);
+
+  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+
+}
+
+#page-subfooter {
+  white-space: nowrap;
+
+  width: 100%;
+  position: relative;
+
+  float: left;
+  text-align: center;
+
+  padding: 0px 0px 30px 0px;
+}
+
+#page-subfooter .subfooter-item {
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+
+  transition: text-shadow 0.10s ease-in-out,
+              background-color 0.10s ease-in-out;
+
+  display: inline-block;
+  font-size: 12pt;
+
+  padding: 0em 2em 0em 2em;
+
+  border-radius: 10px 10px 10px 10px;
+
+}
+
+#page-subfooter .subfooter-item:hover {
   cursor: pointer;
   background-color: var(--header-background-color-lighter);
 

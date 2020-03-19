@@ -1,30 +1,57 @@
 <div class='page-title'>No <i>Guitar Snobs</i> Here!</div>
 
 <div class='section'>
-  <div class='entry'><i>Les Paul</i> or <i>Strat</i> lacking <u>CRUNCH</u>?</div>
-  <div class='entry'><i>Jackson</i> or <i>Ibanez</i> lacking <u>WARMTH</u>?</div>
-  <div class='entry'>Super-Strat not doing very much <i>shredding</i>?</div>
-  <div class='entry'>Vintage reissue not sounding or playing quite right?</div>
-  <div class='entry'>Dull or flat acoustic guitar tone?</div>
-  <div class='entry'>Bass guitar lacking some pop or rumble?</div>
-  <div class='entry'>Got an old treasure that needs some <u>proper</u> TLC?</div>
-  <div class='entry'>Old axe that plays <i>great</i> but sounds weak?</div>
-  <div class='entry'><i>Great</i> sounding axe tough to play?</div>
-  <div class='entry'>Stuck playing a four-string bass with a seven-string guitarist?</div>
-  <div class='entry'>Interested in tuning your six-string really low?</div>
+
+  <div class='list'>
+
+    <div class='list-item'>
+      <div class='copytext'>Electric guitar lacking in <i>crunch</i> or <i>warmth</i>?</div>
+    </div>
+
+    <div class='list-item'>
+      <div class='copytext'><i>Super-Strat</i> not doing very much <i>shredding</i>?</div>
+    </div>
+
+    <div class='list-item'>
+      <div class='copytext'>Vintage reissue not sounding or playing quite right?</div>
+    </div>
+
+    <div class='list-item'>
+      <div class='copytext'>Dull or flat acoustic guitar tone?</div>
+    </div>
+
+    <div class='list-item'>
+      <div class='copytext'>Bass guitar lacking <i>pop</i> or <i>rumble</i>?</div>
+    </div>
+
+    <div class='list-item'>
+      <div class='copytext'>Bring that old treasure up to par!</div>
+    </div>
+
+    <div class='list-item'>
+      <div class='copytext'>Play a four-string bass like a five-string!</div>
+    </div>
+
+    <div class='list-item'>
+      <div class='copytext'>Tune your six-string <i>really</i> low!</div>
+    </div>
+
+    <div class='list-item'>
+      <div class='copytext'>Purchasing a new instrument but unsure where to start?</div>
+    </div>
+
+  </div>
 
 </div>
 
 <div id='home-details' class='section'>
 
   <div class='copytext'>
-    We specialize in targeted customizations and repairs for guitars and basses of all price points. We're not here to belittle your instrument and we're certainly not here to sell you one of ours.
+    We specialize in targeted customizations and repairs for guitars and basses of all price points, identifying shortcomings of mass-production often misunderstood by consumers.
     <br/><br/>
-    We'll consult with you and help you customize your instrument to make it work specifically for <u>YOU</u>! Believe it or not, the quality, sound, and playability of your instrument and it's build has very little to do with what you paid for it.
+    We'll consult with you and help you customize your instrument to make it sound and play specifically for <u>YOU</u>, regardless of how much you paid for it.
     <br/><br/>
-    In fact, the quality, sound, and playability of your instrument is more often affected by it's cost-to-build in the factory, allowing manufacturers to increase profit margins while convincing you that you're purchaing a better, higher quality instrument.
-    <br/><br/>
-    Contact us so that we can chat about your instrument, your technique, your musical style, and what it is you want to do with your instrument or how it is that you want your instrument to perform better.
+    <a href="mailto:technician@eatsbabies.com?subject=Technical%20Services" target="_blank">Contact us</a> so that we can chat about your instrument, your technique, your musical style, and how it is that your instrument to perform <i>better</i>!
   </div>
 
 </div>
